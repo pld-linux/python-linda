@@ -43,7 +43,7 @@ Krotka jest uporz±dkowanym i utypowionym zestawem danych. Przestrzenie
 krotek istniej± w systemie niezale¿nie od procesów, a dane umieszczone
 w przestrzeni krotek tak¿e s± niezale¿ne od procesów. Wiêcej
 informacji mo¿na znale¼æ w dzie³ach "Generative communication in
-Linda" (1985) i "Multiple tuple spaces in Linda" autorstwa Daviad
+Linda" (1985) i "Multiple tuple spaces in Linda" autorstwa Davida
 Gelerntera.
 
 PyLinda jest prost± implementacj± ¶rodowiska Linda. Pomimo swojej
