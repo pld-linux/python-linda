@@ -11,7 +11,6 @@ License:	LGPL
 Group:		Libraries/Python
 Source0:	http://www-users.cs.york.ac.uk/~aw/pylinda/%{module}-%{version}.tar.gz
 # Source0-md5:	a3a37b7263e6ddb0b6ebae01700c9cdd
-#Patch0:		pylinda-server-first-line-path.patch
 URL:		http://www-users.cs.york.ac.uk/~aw/pylinda
 BuildRequires:	python-devel >= 2.3
 Requires:	python >= 2.3
@@ -95,7 +94,6 @@ Pakiet zawieraj±cy programy przyk³adowe do ¶rodowiska pylinda.
 
 %prep
 %setup -q -n %{module}-%{version}
-#%patch0 -p0
 
 %build
 python setup.py build_ext
