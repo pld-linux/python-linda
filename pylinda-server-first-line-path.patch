@@ -1,0 +1,8 @@
+--- linda_server.py.orig        2004-05-20 16:09:07.801414680 +0200
++++ linda_server.py     2004-05-20 16:09:27.161471504 +0200
+@@ -1,4 +1,4 @@
+-#!/usr/local/pkg/python-2.3.3/bin/python
++#!/usr/bin/python
+
+ #    Copyright 2004 Andrew Wilkinson <aw@cs.york.ac.uk>.
+ #
