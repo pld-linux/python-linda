@@ -5,17 +5,16 @@
 Summary:	Simple Python implementation of a linda system
 Summary(pl):	Prosta implementacja systemu linda w Pythonie
 Name:		python-%{module}
-Version:	0.2
+Version:	0.3
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
 Source0:	http://www-users.cs.york.ac.uk/~aw/pylinda/%{module}-%{version}.tar.gz
-# Source0-md5:	396d2908f530293d8390638639eb3198
-Patch0:		pylinda-server-first-line-path.patch
+# Source0-md5:	a3a37b7263e6ddb0b6ebae01700c9cdd
+#Patch0:		pylinda-server-first-line-path.patch
 URL:		http://www-users.cs.york.ac.uk/~aw/pylinda
 BuildRequires:	python-devel >= 2.3
 Requires:	python >= 2.3
-BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -96,21 +95,21 @@ Pakiet zawieraj±cy programy przyk³adowe do ¶rodowiska pylinda.
 
 %prep
 %setup -q -n %{module}-%{version}
-%patch0 -p0
+#%patch0 -p0
 
 %build
 python setup.py build_ext
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{py_sitescriptdir},%{_examplesdir}/%{name}-%{version},%{_bindir}}
+install -d $RPM_BUILD_ROOT{%{py_sitedir},%{_examplesdir}/%{name}-%{version},%{_bindir}}
 
 python setup.py install \
 	--root=$RPM_BUILD_ROOT \
-	--install-lib=%{py_sitescriptdir} \
+	--install-lib=%{py_sitedir} \
 	--optimize=2
 
-find $RPM_BUILD_ROOT%{py_sitescriptdir} -name \*.py -exec rm {} \;
+find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -exec rm {} \;
 
 cp -ar examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a linda_server.py $RPM_BUILD_ROOT%{_bindir}
@@ -123,7 +122,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{py_sitescriptdir}/linda
+%attr(755,root,root) %{py_sitedir}/shm.so
+%{py_sitedir}/linda
 
 %files doc
 %defattr(644,root,root,755)
