@@ -4,12 +4,12 @@
 Summary:	Simple Python implementation of a linda system
 Summary(pl):	Prosta implementacja systemu linda w Pythonie
 Name:		python-%{module}
-Version:	0.3
+Version:	0.4
 Release:	1
 License:	LGPL
 Group:		Libraries/Python
-Source0:	http://www-users.cs.york.ac.uk/~aw/pylinda/%{module}-%{version}.tar.gz
-# Source0-md5:	a3a37b7263e6ddb0b6ebae01700c9cdd
+Source0:	http://www-users.cs.york.ac.uk/~aw/pylinda/dist/%{module}-%{version}.tar.gz
+# Source0-md5:	a6cda49e64e7d247e3f11939646e18d0
 URL:		http://www-users.cs.york.ac.uk/~aw/pylinda
 BuildRequires:	python-devel >= 1:2.3
 Requires:	python >= 2.3
@@ -119,7 +119,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{py_sitedir}/shm.so
 %{py_sitedir}/linda
 
 %files doc
