@@ -36,9 +36,9 @@ This package contains pylinda libraries, which are necessary for running
 pylinda servers and developing client programs.
 
 %description -l pl
-Lidna jest poddawanym g³êbokiej analizie ¶rodowiskiem komputerowego
+Linda jest poddawanym g³êbokiej analizie ¶rodowiskiem komputerowego
 przetwarzania danych, skupiaj±cym siê na notacji przestrzeni krotek.
-Przestreñ krotek jest zbiorem (a w³a¶ciwie - multizbiorem) krotek.
+Przestrzeñ krotek jest zbiorem (a w³a¶ciwie - multizbiorem) krotek.
 Krotka jest uporz±dkowanym i utypowionym zestawem danych. Przestrzenie
 krotek istniej± w systemie niezale¿nie od procesów, a dane umieszczone
 w przestrzeni krotek tak¿e s± niezale¿ne od procesów. Wiêcej
@@ -135,4 +135,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -n pylinda-server
 %defattr(755,root,root,755)
-%{_bindir}/linda_server.py
+%attr(755,root,root) %{_bindir}/linda_server.py
