@@ -1,5 +1,4 @@
 
-%include	/usr/lib/rpm/macros.python
 %define		module	linda
 
 Summary:	Simple Python implementation of a linda system
