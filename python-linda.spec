@@ -47,7 +47,7 @@ Linda" (1985) i "Multiple tuple spaces in Linda" autorstwa Davida
 Gelerntera.
 
 PyLinda jest prost± implementacj± ¶rodowiska Linda. Pomimo swojej
-prostoty zawiera jednak pewn± liczbê najczê¶cie spotykanych rozszerzeñ
+prostoty zawiera jednak pewn± liczbê najczê¶ciej spotykanych rozszerzeñ
 Lindy, takich jak wielokrotne przestrzenie krotek, od¶miecanie
 pamiêci, rozs±dnie zaprojektowane nieblokuj±ce operacje pierwotne oraz
 ca³± masê z³o¿onych operacji na krotkach.
@@ -57,7 +57,7 @@ uruchomienia serwerów oraz rozwijania programów klienckich pylindy.
 
 %package -n pylinda-server
 Summary:	Server program for pylinda computing environment
-Summary(pl):	Program serwera ¶rodowika pylinda
+Summary(pl):	Program serwera ¶rodowiska pylinda
 Group:		Applications/Science
 Requires:	%{name} = %{version}-%{release}
 
