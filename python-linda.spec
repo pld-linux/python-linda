@@ -11,7 +11,7 @@ Group:		Libraries/Python
 Source0:	http://www-users.cs.york.ac.uk/~aw/pylinda/%{module}-%{version}.tar.gz
 # Source0-md5:	a3a37b7263e6ddb0b6ebae01700c9cdd
 URL:		http://www-users.cs.york.ac.uk/~aw/pylinda
-BuildRequires:	python-devel >= 2.3
+BuildRequires:	python-devel >= 1:2.3
 Requires:	python >= 2.3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
