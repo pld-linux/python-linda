@@ -29,8 +29,8 @@ includes several of the more recently proposed extensions to Linda in
 the form of multiple tuple spaces, garbage collection, sane
 non-blocking primitives and bulk tuple operations.
 
-This package contains pylinda libraries, which are necessary for running
-pylinda servers and developing client programs.
+This package contains pylinda libraries, which are necessary for
+running pylinda servers and developing client programs.
 
 %description -l pl
 Linda jest poddawanym g³êbokiej analizie ¶rodowiskiem komputerowego
@@ -44,10 +44,10 @@ Linda" (1985) i "Multiple tuple spaces in Linda" autorstwa Davida
 Gelerntera.
 
 PyLinda jest prost± implementacj± ¶rodowiska Linda. Pomimo swojej
-prostoty zawiera jednak pewn± liczbê najczê¶ciej spotykanych rozszerzeñ
-Lindy, takich jak wielokrotne przestrzenie krotek, od¶miecanie
-pamiêci, rozs±dnie zaprojektowane nieblokuj±ce operacje pierwotne oraz
-ca³± masê z³o¿onych operacji na krotkach.
+prostoty zawiera jednak pewn± liczbê najczê¶ciej spotykanych
+rozszerzeñ Lindy, takich jak wielokrotne przestrzenie krotek,
+od¶miecanie pamiêci, rozs±dnie zaprojektowane nieblokuj±ce operacje
+pierwotne oraz ca³± masê z³o¿onych operacji na krotkach.
 
 Ten pakiet zawiera biblioteki pakietu pylinda, niezbêdne do
 uruchomienia serwerów oraz rozwijania programów klienckich pylindy.
@@ -108,7 +108,7 @@ python setup.py install \
 
 find $RPM_BUILD_ROOT%{py_sitedir} -name \*.py -exec rm {} \;
 
-cp -ar examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -a examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 cp -a linda_server.py $RPM_BUILD_ROOT%{_bindir}
 
 rm -rf $RPM_BUILD_ROOT%{_datadir}/pylinda
