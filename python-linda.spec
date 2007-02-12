@@ -2,7 +2,7 @@
 %define		module	linda
 
 Summary:	Simple Python implementation of a linda system
-Summary(pl):	Prosta implementacja systemu linda w Pythonie
+Summary(pl.UTF-8):   Prosta implementacja systemu linda w Pythonie
 Name:		python-%{module}
 Version:	0.4
 Release:	1
@@ -32,29 +32,29 @@ non-blocking primitives and bulk tuple operations.
 This package contains pylinda libraries, which are necessary for
 running pylinda servers and developing client programs.
 
-%description -l pl
-Linda jest poddawanym g³êbokiej analizie ¶rodowiskiem komputerowego
-przetwarzania danych, skupiaj±cym siê na notacji przestrzeni krotek.
-Przestrzeñ krotek jest zbiorem (a w³a¶ciwie - multizbiorem) krotek.
-Krotka jest uporz±dkowanym i utypowionym zestawem danych. Przestrzenie
-krotek istniej± w systemie niezale¿nie od procesów, a dane umieszczone
-w przestrzeni krotek tak¿e s± niezale¿ne od procesów. Wiêcej
-informacji mo¿na znale¼æ w dzie³ach "Generative communication in
+%description -l pl.UTF-8
+Linda jest poddawanym gÅ‚Ä™bokiej analizie Å›rodowiskiem komputerowego
+przetwarzania danych, skupiajÄ…cym siÄ™ na notacji przestrzeni krotek.
+PrzestrzeÅ„ krotek jest zbiorem (a wÅ‚aÅ›ciwie - multizbiorem) krotek.
+Krotka jest uporzÄ…dkowanym i utypowionym zestawem danych. Przestrzenie
+krotek istniejÄ… w systemie niezaleÅ¼nie od procesÃ³w, a dane umieszczone
+w przestrzeni krotek takÅ¼e sÄ… niezaleÅ¼ne od procesÃ³w. WiÄ™cej
+informacji moÅ¼na znaleÅºÄ‡ w dzieÅ‚ach "Generative communication in
 Linda" (1985) i "Multiple tuple spaces in Linda" autorstwa Davida
 Gelerntera.
 
-PyLinda jest prost± implementacj± ¶rodowiska Linda. Pomimo swojej
-prostoty zawiera jednak pewn± liczbê najczê¶ciej spotykanych
-rozszerzeñ Lindy, takich jak wielokrotne przestrzenie krotek,
-od¶miecanie pamiêci, rozs±dnie zaprojektowane nieblokuj±ce operacje
-pierwotne oraz ca³± masê z³o¿onych operacji na krotkach.
+PyLinda jest prostÄ… implementacjÄ… Å›rodowiska Linda. Pomimo swojej
+prostoty zawiera jednak pewnÄ… liczbÄ™ najczÄ™Å›ciej spotykanych
+rozszerzeÅ„ Lindy, takich jak wielokrotne przestrzenie krotek,
+odÅ›miecanie pamiÄ™ci, rozsÄ…dnie zaprojektowane nieblokujÄ…ce operacje
+pierwotne oraz caÅ‚Ä… masÄ™ zÅ‚oÅ¼onych operacji na krotkach.
 
-Ten pakiet zawiera biblioteki pakietu pylinda, niezbêdne do
-uruchomienia serwerów oraz rozwijania programów klienckich pylindy.
+Ten pakiet zawiera biblioteki pakietu pylinda, niezbÄ™dne do
+uruchomienia serwerÃ³w oraz rozwijania programÃ³w klienckich pylindy.
 
 %package -n pylinda-server
 Summary:	Server program for pylinda computing environment
-Summary(pl):	Program serwera ¶rodowiska pylinda
+Summary(pl.UTF-8):   Program serwera Å›rodowiska pylinda
 Group:		Applications/Science
 Requires:	%{name} = %{version}-%{release}
 
@@ -62,12 +62,12 @@ Requires:	%{name} = %{version}-%{release}
 This package contains server program for pylinda computing
 environment.
 
-%description -n pylinda-server -l pl
-Program serwera ¶rodowiska pylinda.
+%description -n pylinda-server -l pl.UTF-8
+Program serwera Å›rodowiska pylinda.
 
 %package doc
 Summary:	Documentation for pylinda computing environment
-Summary(pl):	Dokumentcja ¶rodowiska pylinda
+Summary(pl.UTF-8):   Dokumentcja Å›rodowiska pylinda
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -75,12 +75,12 @@ Requires:	%{name} = %{version}-%{release}
 This package contains documentation files for pylinda computing
 environment.
 
-%description doc -l pl
-Pakiet zawieraj±cy dokumentacjê ¶rodowiska pylinda.
+%description doc -l pl.UTF-8
+Pakiet zawierajÄ…cy dokumentacjÄ™ Å›rodowiska pylinda.
 
 %package examples
 Summary:	Example programs for pylinda computing environment
-Summary(pl):	Programy przyk³adowe do ¶rodowiska pylinda
+Summary(pl.UTF-8):   Programy przykÅ‚adowe do Å›rodowiska pylinda
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -88,8 +88,8 @@ Requires:	%{name} = %{version}-%{release}
 This package contains example programs for pylinda computing
 environment.
 
-%description examples -l pl
-Pakiet zawieraj±cy programy przyk³adowe do ¶rodowiska pylinda.
+%description examples -l pl.UTF-8
+Pakiet zawierajÄ…cy programy przykÅ‚adowe do Å›rodowiska pylinda.
 
 %prep
 %setup -q -n %{module}-%{version}
