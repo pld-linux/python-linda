@@ -2,7 +2,7 @@
 %define		module	linda
 
 Summary:	Simple Python implementation of a linda system
-Summary(pl.UTF-8):   Prosta implementacja systemu linda w Pythonie
+Summary(pl.UTF-8):	Prosta implementacja systemu linda w Pythonie
 Name:		python-%{module}
 Version:	0.4
 Release:	1
@@ -54,7 +54,7 @@ uruchomienia serwerów oraz rozwijania programów klienckich pylindy.
 
 %package -n pylinda-server
 Summary:	Server program for pylinda computing environment
-Summary(pl.UTF-8):   Program serwera środowiska pylinda
+Summary(pl.UTF-8):	Program serwera środowiska pylinda
 Group:		Applications/Science
 Requires:	%{name} = %{version}-%{release}
 
@@ -67,7 +67,7 @@ Program serwera środowiska pylinda.
 
 %package doc
 Summary:	Documentation for pylinda computing environment
-Summary(pl.UTF-8):   Dokumentcja środowiska pylinda
+Summary(pl.UTF-8):	Dokumentcja środowiska pylinda
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
@@ -80,7 +80,7 @@ Pakiet zawierający dokumentację środowiska pylinda.
 
 %package examples
 Summary:	Example programs for pylinda computing environment
-Summary(pl.UTF-8):   Programy przykładowe do środowiska pylinda
+Summary(pl.UTF-8):	Programy przykładowe do środowiska pylinda
 Group:		Libraries/Python
 Requires:	%{name} = %{version}-%{release}
 
